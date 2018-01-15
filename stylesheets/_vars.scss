@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+    font-family: 'hungryneighbors';
+    src: url('../fonts/hungryneighbors-Bold.eot');
+    src: url('../fonts/hungryneighbors-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/hungryneighbors-Bold.woff2') format('woff2'),
+        url('../fonts/hungryneighbors-Bold.woff') format('woff'),
+        url('../fonts/hungryneighbors-Bold.ttf') format('truetype'),
+        url('../fonts/hungryneighbors-Bold.svg#hungryneighbors-Bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hungryneighbors';
+    src: url('../fonts/hungryneighbors-Regular.eot');
+    src: url('../fonts/hungryneighbors-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/hungryneighbors-Regular.woff2') format('woff2'),
+        url('../fonts/hungryneighbors-Regular.woff') format('woff'),
+        url('../fonts/hungryneighbors-Regular.ttf') format('truetype'),
+        url('../fonts/hungryneighbors-Regular.svg#hungryneighbors-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$color-grey: #f1f1f1;
+$color-accent: #929000;
+$color-black: #000;
+
+$font: 'Lato', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$font-script: 'hungryneighbors', 'Lato', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
