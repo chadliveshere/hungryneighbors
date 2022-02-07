@@ -1,0 +1,166 @@
+//@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Questrial&display=swap");
+
+//@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Murecho:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Mulish:wght@400;500;700&display=swap");
+
+html {
+  color: var(--brown);
+  font-size: 16px;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0.31px;
+  font-weight: 400;
+  @include media($break_small...) {
+    font-weight: 500;
+    letter-spacing: 0px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: 700;
+}
+
+.heading-1,
+h1 {
+  font-size: 3.157rem;
+  line-height: 1;
+  letter-spacing: 0.34px;
+  margin-bottom: 12px;
+}
+
+.heading-2,
+h2 {
+  font-size: 2.369rem;
+  line-height: 1;
+  letter-spacing: 0.37px;
+  margin: 24px 0 12px;
+}
+
+.heading-3,
+h3 {
+  font-size: 1.777rem;
+  line-height: 1;
+  letter-spacing: 0.38px;
+  margin-bottom: 6px;
+}
+
+.heading-4,
+h4 {
+  font-size: 1.333rem;
+  line-height: 1.2;
+  letter-spacing: -0.36px;
+  margin-bottom: 6px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+time {
+  position: relative;
+  margin: 0;
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0px;
+  line-height: 1.5;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  background-color: var(--brown);
+  color: var(--parchment);
+  padding: 3px 12px;
+  margin-right: 6px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+
+.disclaimer {
+  padding-top: 24px;
+  font-size: 0.65rem;
+  line-height: 1.5;
+  opacity: 0.6;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 24px;
+  & li {
+    margin-bottom: 1.5rem;
+  }
+}
+
+ul li {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Let's make sure all's aligned */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+a,
+b,
+i,
+strong,
+em,
+small,
+code {
+  line-height: 0;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}

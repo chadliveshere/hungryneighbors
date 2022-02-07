@@ -1,0 +1,15 @@
+:root {
+  --brown: hsla(30, 40%, 10%, 1);
+  --yellow: hsla(45, 88%, 57%, 1);
+  --tan: hsla(45, 81%, 73%, 1);
+  --parchment: hsla(47, 100%, 84%, 1);
+
+  --contentWidth: 980px;
+}
+
+[data-theme="dark"] {
+  --brown: hsla(30, 40%, 10%, 1);
+  --yellow: hsla(45, 88%, 57%, 1);
+  --tan: hsla(45, 81%, 73%, 1);
+  --parchment: hsla(47, 100%, 84%, 1);
+}

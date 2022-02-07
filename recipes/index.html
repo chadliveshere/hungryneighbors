@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -10,20 +10,16 @@
   </head>
 
   <body>
-    <nav class="main-nav" include="./includes/main-nav.html"></nav>
-    <main>
-      <article class="row content">
-        <div data-featured class="column large-7 small-12 small-centered"></div>
-        <div
-          data-recipes
-          class="column large-4 large-last small-12 small-centered"
-        ></div>
-      </article>
-    </main>
+    <nav class="main-nav" include="../includes/main-nav.html"></nav>
 
+    <main data-recipe></main>
+    <div class="row">
+      <div class="column large-6" data-recipe-previous></div>
+      <div class="column large-6" data-recipe-next></div>
+    </div>
     <footer
       class="footer row align-items-start"
-      include="./includes/footer.html"
+      include="../includes/footer.html"
     ></footer>
 
     <script
@@ -38,7 +34,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="../js/recipe.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

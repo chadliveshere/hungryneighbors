@@ -1,0 +1,184 @@
+html {
+  background-color: var(--tan);
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.recipe {
+  &__details {
+    width: 90%;
+    max-width: 980px;
+    margin: 48px auto;
+    @include media($break_small...) {
+      margin: 0 auto 48px;
+    }
+  }
+  &__heading {
+    min-height: 500px;
+    position: relative;
+  }
+  &__title {
+    position: relative;
+    display: block;
+    &-container {
+      padding-top: 48px;
+      @include media($break_small_medium...) {
+        padding-top: 0px;
+      }
+    }
+    &-clamp {
+      background-color: var(--tan);
+      padding: 24px 48px;
+      @include media($break_small_medium...) {
+        padding: 24px;
+        margin: -96px 12px 0;
+      }
+    }
+  }
+  &__image {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    max-height: 500px;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    @include media($break_small_medium...) {
+      position: relative;
+    }
+    &-thumb {
+      position: relative;
+      max-height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__ingredients {
+    position: sticky;
+    top: 48px;
+    color: var(--brown);
+    padding: 24px 48px;
+    border-radius: 24px;
+    background-color: var(--yellow);
+    @include media($break_small...) {
+      position: relative;
+      top: 0;
+      padding: 6px 24px;
+    }
+  }
+  &__instructions {
+    padding: 24px 0;
+  }
+}
+
+.collage {
+  &__container {
+    min-height: 250px;
+    background-position-y: -48px;
+    background-size: cover;
+    padding: 0 24px;
+    margin: 0 0 96px;
+    cursor: pointer;
+    user-select: none;
+  }
+  &__title {
+    &-container {
+      display: inline-block;
+      margin-bottom: -48px;
+      color: var(--parchment);
+      background-color: var(--brown);
+      padding: 12px;
+      text-align: center;
+    }
+  }
+}
+
+.featured {
+  &__container {
+    position: sticky;
+    top: 48px;
+    margin-bottom: 48px;
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    margin: 0 auto 24px;
+    background-size: cover;
+  }
+}
+
+.content {
+  width: 90%;
+  max-width: 980px;
+  margin: 48px auto;
+  @include media($break_small...) {
+    margin: 24px auto;
+  }
+}
+
+.link {
+  &-header {
+    color: var(--brown);
+    text-decoration: none;
+    text-underline-position: from-font;
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.25rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &-collage {
+    color: inherit;
+    text-decoration: none;
+    text-underline-position: from-font;
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.1rem;
+    &:hover h4 {
+      text-decoration: underline;
+    }
+  }
+}
+
+.main-nav {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brown);
+  color: var(--parchment);
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  &__logo {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    background-color: var(--tan);
+    mask-image: url(../images/hn-logo.svg);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+.footer {
+  padding: 48px max(24px, calc(50vw - var(--contentWidth) / 2)) 24px;
+  background-color: var(--yellow);
+  color: var(--brown);
+  width: 100%;
+  box-sizing: border-box;
+  ul li {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+}
