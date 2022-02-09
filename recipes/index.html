@@ -2,6 +2,24 @@
 
 <html>
   <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/favicon/site.webmanifest" />
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,9 +31,12 @@
     <nav class="main-nav" include="../includes/main-nav.html"></nav>
 
     <main data-recipe></main>
-    <div class="row">
-      <div class="column large-6" data-recipe-previous></div>
-      <div class="column large-6" data-recipe-next></div>
+    <div class="row recipe__bottomNav">
+      <div class="column large-4 small-6" data-recipe-previous></div>
+      <div
+        class="column large-4 small-6 large-last text-right"
+        data-recipe-next
+      ></div>
     </div>
     <footer
       class="footer row align-items-start"

@@ -187,11 +187,11 @@ const buildRecipeNav = (prev, next) => {
 
   const nextRecipe = document.createElement("a");
   nextRecipe.href = `?title=${next.slug}`;
-  nextRecipe.innerText = next.title;
+  nextRecipe.innerHTML = `<p>Next</p><h4>${next.title}</h4>`;
   nextWrapper.appendChild(nextRecipe);
 
   const prevRecipe = document.createElement("a");
   prevRecipe.href = `?title=${prev.slug}`;
-  prevRecipe.innerText = prev.title;
+  prevRecipe.innerHTML = `<p>Previous</p><h4>${prev.title}</h4>`;
   prevWrapper.appendChild(prevRecipe);
 };

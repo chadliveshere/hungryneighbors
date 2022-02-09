@@ -1259,6 +1259,10 @@ time {
   color: inherit;
 }
 
+.text-right {
+  text-align: right;
+}
+
 p,
 ul,
 ol,
@@ -1409,6 +1413,21 @@ body {
 }
 .recipe__instructions {
   padding: 24px 0;
+}
+.recipe__bottomNav {
+  padding: 48px max(24px, calc(50vw - var(--contentWidth) / 2));
+}
+.recipe__bottomNav p {
+  margin-bottom: 1rem;
+}
+.recipe__bottomNav a {
+  display: block;
+}
+.recipe__bottomNav a:hover {
+  text-decoration: none;
+}
+.recipe__bottomNav a:hover h4 {
+  text-decoration: underline;
 }
 
 .collage__container {

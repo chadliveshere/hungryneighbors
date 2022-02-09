@@ -75,6 +75,21 @@ body {
   &__instructions {
     padding: 24px 0;
   }
+  &__bottomNav {
+    padding: 48px max(24px, calc(50vw - var(--contentWidth) / 2));
+    & p {
+      margin-bottom: 1rem;
+    }
+    & a {
+      display: block;
+      &:hover {
+        text-decoration: none;
+        h4 {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 .collage {
